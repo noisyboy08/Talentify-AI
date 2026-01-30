@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
-import { usePuterStore } from "../lib/puter";
+import { usePuterStore } from "~/lib/puter";
 import type { Route } from "./+types/auth";
 
 export function meta({}: Route.MetaArgs) {
@@ -20,7 +20,7 @@ const AuthPage = () => {
     if (auth.isAuthenticated && next) {
       navigate(next);
     }
-  }, [auth.isAuthenticated, next]);
+  }, [auth.isAuthenticated, next, navigate]);
 
   return (
     <main className="bg-[url('/images/bg-auth.svg')] bg-cover min-h-screen flex items-center justify-center">

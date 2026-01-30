@@ -1,4 +1,4 @@
-import ScoreGauge from "../ScoreGauge";
+import ScoreGauge from "~/components/ScoreGauge";
 
 const ScoreBadge = ({ score }: { score: number }) => {
   const badgeColor =

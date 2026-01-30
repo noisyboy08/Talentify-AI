@@ -28,7 +28,7 @@ export default function Home() {
     if (!auth.isAuthenticated) {
       navigate("/auth?next=/");
     }
-  }, [auth.isAuthenticated]);
+  }, [auth.isAuthenticated, navigate]);
 
   useEffect(() => {
     const loadResumes = async () => {

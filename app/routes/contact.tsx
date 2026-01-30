@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Send, Loader2, CheckCircle2, MessageSquare, User, Mail as MailIcon } from "lucide-react";
+import { Mail, Send, Loader2, CheckCircle2, MessageSquare, User } from "lucide-react";
 import { usePuterStore } from "~/lib/puter";
 import type { Route } from "./+types/contact";
 
@@ -74,7 +74,7 @@ Generate a brief, professional acknowledgment message.`;
               <h2 className="text-xl font-bold text-gray-900 mb-4">Get in Touch</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <MailIcon className="w-5 h-5 text-blue-600 mt-1" />
+                  <Mail className="w-5 h-5 text-blue-600 mt-1" />
                   <div>
                     <div className="font-semibold text-gray-900">Email</div>
                     <a href="mailto:support@talentify.ai" className="text-blue-600 hover:underline">
@@ -133,7 +133,7 @@ Generate a brief, professional acknowledgment message.`;
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    <MailIcon className="w-4 h-4 inline mr-1" />
+                    <Mail className="w-4 h-4 inline mr-1" />
                     Email
                   </label>
                   <input

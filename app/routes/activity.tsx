@@ -35,7 +35,7 @@ export default function ActivityPage() {
   useEffect(() => {
     if (!auth.isAuthenticated) return;
     loadActivities();
-  }, [auth.isAuthenticated]);
+  }, [auth.isAuthenticated, kv]);
 
   const loadActivities = async () => {
     try {

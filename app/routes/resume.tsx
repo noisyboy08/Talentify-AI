@@ -41,7 +41,7 @@ const ResumePage = () => {
     if (!isLoading && !auth.isAuthenticated) {
       navigate(`/auth?next=/resume/${id}`);
     }
-  }, [isLoading]);
+  }, [isLoading, auth.isAuthenticated, navigate, id]);
 
   useEffect(() => {
     const loadResume = async () => {

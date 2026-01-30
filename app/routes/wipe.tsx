@@ -21,7 +21,7 @@ const WipeApp = () => {
     if (!isLoading && !auth.isAuthenticated) {
       navigate("/auth?next=/wipe");
     }
-  }, [isLoading]);
+  }, [isLoading, auth.isAuthenticated, navigate]);
 
   const handleDelete = async () => {
     setIsWiping(true);

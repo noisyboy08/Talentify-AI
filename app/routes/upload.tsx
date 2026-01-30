@@ -27,7 +27,7 @@ const UploadPage = () => {
     if (!isLoading && !auth.isAuthenticated) {
       navigate("/auth?next=/upload");
     }
-  }, [isLoading]);
+  }, [isLoading, auth.isAuthenticated, navigate]);
 
   const handleFileSelect = (file: File | null) => {
     setFile(file);
